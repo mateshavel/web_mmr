@@ -1,0 +1,46 @@
+﻿.logo {
+    margin:20px 0;
+
+    a {
+        display:inline-block
+    }
+}
+
+.wifi-login {
+    margin:28px 0;
+
+    a {
+        color:@text-color;
+        font-weight:500;
+
+        img {
+            margin-top:-4px;
+            padding-right:8px
+        }
+    }
+}
+
+@media screen and (max-width: @screen-xs-max) {
+    .logo {
+        margin:22px 0;
+
+        img {
+            height:23px;
+        }
+    }
+
+    .wifi-login {
+        display:none
+    }
+
+    .header-logo {
+        float:left
+    }
+
+    .header-search {
+        float:right;
+        margin:16px 0;
+        position:absolute;
+        width:100%
+    }
+}

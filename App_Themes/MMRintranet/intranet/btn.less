@@ -1,0 +1,59 @@
+﻿.btn {
+    font-size:14px;
+    font-weight:500;
+    padding-left:12px;
+    padding-right:12px;
+    border:0;
+    line-height:24px;
+    -webkit-box-shadow:0px 0px 2px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow:0px 0px 2px 0px rgba(0,0,0,0.5);
+    box-shadow:0px 0px 2px 0px rgba(0,0,0,0.5);
+    position:relative;
+
+    &:hover {
+        background-color:@brand-primary;
+        color:#fff;
+        -webkit-box-shadow:0 8px 12px 0 rgba(70,229,125,0.25);
+        -moz-box-shadow:0 8px 12px 0 rgba(70,229,125,0.25);
+        box-shadow:0 8px 12px 0 rgba(70,229,125,0.25);
+    }
+}
+
+.btn-green {
+    background-color:@brand-primary;
+    color:#fff;
+    
+    &:focus {
+        color:#fff
+    }
+}
+
+.btn-back {
+    padding-left:32px;
+    
+    &:after {
+        content:'';
+        background:transparent url('../icons/ico-back-arrow.svg') 12px 13px no-repeat;
+        position:absolute;
+        width:32px;
+        height:40px;
+        top:0;
+        left:0;
+    }
+
+    &:hover:after {
+        background:transparent url('../icons/ico-back-arrow-white.svg') 12px 13px no-repeat;
+    }
+}
+
+.btn-right {
+    float:right
+}
+
+.btn-full {
+    width:100%
+}
+
+.btn-top {
+    margin-top:-72px
+}

@@ -1,0 +1,39 @@
+﻿.tabs {
+    text-align:center;
+
+    a {
+        padding:0 16px 24px;
+        display:inline-block;
+        position:relative;
+        bottom:-3px;
+
+        &.active, &:hover {
+            border-bottom:3px solid @brand-primary;
+            text-decoration:none
+        }
+    }
+}
+
+.filter-tabs .tabs a {
+    padding-top:56px
+}
+
+.tabs-mobile {
+    display:none;
+    padding-bottom:32px
+}
+
+.tabs-mobile-separator {
+    padding-top:32px
+}
+
+@media screen and (max-width: @screen-xs-max) {
+    .tabs {
+        display:none
+    }
+    .tabs-mobile {
+        display:block
+    }
+
+}
+

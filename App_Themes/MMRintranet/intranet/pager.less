@@ -1,0 +1,31 @@
+﻿.pager {
+    line-height:44px;
+    margin-top:40px;
+
+    a, span {
+        width:44px;
+        height:44px;
+        display:inline-block;
+        line-height:44px;
+        text-align:center;
+
+        &:hover, &.active {
+            -webkit-box-shadow:0 0 0 1px rgba(63,196,99,1);
+            -moz-box-shadow:0 0 0 1px rgba(63,196,99,1);
+            box-shadow:0 0 0 1px rgba(63,196,99,1);
+            -webkit-border-radius:3px;
+            -moz-border-radius:3px;
+            border-radius:3px;
+            text-decoration:none;
+        }
+
+        &.left, &.right {
+            background:transparent url('../icons/ico-back-arrow.svg') 16px 16px no-repeat;
+        }
+        &.right {
+            -webkit-transform:scaleX(-1);
+            -ms-transform:scaleX(-1);
+            transform:scaleX(-1)
+        }
+    }
+}

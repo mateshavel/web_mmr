@@ -1,0 +1,214 @@
+﻿.text-block {
+    padding-top:16px;
+    clear:both;
+    display:inline-block;
+    text-align:justify
+}
+
+@media screen and (max-width: @screen-xs-max) {
+    .text-block img {
+        padding-bottom:16px
+    }
+}
+
+.gallery-block {
+    padding:32px 0;
+
+    .gallery {
+        height:auto !important;
+        
+        .images {
+            max-height:196px;
+            overflow:hidden !important;
+
+            .item {
+                width:196px;
+                height:196px;
+                display:block;
+                float:left;
+                margin:0 16px;
+
+                a {
+                    width:196px;
+                    height:196px;
+                    display:table-cell;
+                    vertical-align:middle;
+
+                    img {
+                        text-align:center;
+                        vertical-align:middle;
+                        width:100%;
+                        max-height:100%
+                    }
+                }
+            }
+        }
+
+        .buttons {
+            position:relative;
+            top:-10px;
+            z-index:100;
+            
+            .prevslider, .nextslider {
+                position:absolute;
+            }
+
+            .prevslider:after, .nextslider:after {
+                content:'';
+                position:absolute;
+                top:78px;
+                width:40px;
+                height:40px;
+                background-color:rgba(30, 30, 30, 0.75);
+                background-image:url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjQ4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSI0OCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMTIgNGwtMS40MSAxLjQxTDE2LjE3IDExSDR2MmgxMi4xN2wtNS41OCA1LjU5TDEyIDIwbDgtOHoiLz48L3N2Zz4=);
+                background-repeat:no-repeat;
+                background-position:center center;
+                background-size:24px 24px;
+            }
+
+            .prevslider:hover:after, .nextslider:hover:after {
+                opacity:0.5
+            }
+
+            .prevslider {
+                left:32px;
+                -webkit-transform:scaleX(-1);
+                -ms-transform:scaleX(-1);
+                transform:scaleX(-1)
+            }
+
+            .nextslider {
+                right:32px
+            }
+        }
+    }
+}
+
+.share-block {
+    font-size:14px;
+    color:@gray-table;
+    padding-top:72px;
+    clear:both;
+    line-height:44px;
+
+    .item {
+        width:44px;
+        height:44px;
+        display:inline-block;
+        line-height:56px;
+        text-align:center;
+
+        svg {
+            fill:@gray-table
+        }
+
+        &:hover {
+            -webkit-box-shadow:0 0 0 1px rgba(63,196,99,1);
+            -moz-box-shadow:0 0 0 1px rgba(63,196,99,1);
+            box-shadow:0 0 0 1px rgba(63,196,99,1);
+            -webkit-border-radius:3px;
+            -moz-border-radius:3px;
+            border-radius:3px;
+
+            svg {
+                fill:@text-color
+            }
+        }
+    }
+
+    .title {
+        padding-right:8px;
+        vertical-align:middle;
+        line-height:32px;
+        height:44px;
+        display:inline-block;
+
+        &.title-category {
+            line-height:44px
+        }
+    }
+}
+
+@media screen and (max-width: @screen-xs-max) {
+    .share-block {
+        text-align:center;
+        padding-top:0;
+
+        .title {
+            display:none
+        }
+    }
+}
+
+.contact-block {
+    .line-separator {
+        padding-top:48px
+    }
+
+    .item {
+        padding-top:32px;
+
+        img {
+            -webkit-border-radius:44px;
+            -moz-border-radius:44px;
+            border-radius:44px;
+            float:left;
+            margin-right:32px
+        }
+
+        span {
+            color:@gray-table;
+
+            strong {
+                color:@text-color
+            }
+
+            &.email {
+                display:block;
+                padding-top:16px;
+
+                a {
+                    color:@brand-primary;
+
+                    &:hover {
+                        text-decoration:underline
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: @screen-xs-max) {
+    .contact-block {
+        .line-separator {
+            margin-top:32px;
+            padding-top:32px
+        }
+    }
+}
+
+@media screen and (max-width: (@screen-xs - 1)) {
+    .contact-block {
+        text-align:center;
+
+        .item {
+            padding-top:16px;
+
+            img {
+                float:none;
+                margin-right:0
+            }
+
+            span {
+                padding-top:16px;
+                width:100%;
+                display:block;
+
+                &.email {
+                    padding-top:0
+                }
+            }
+        }
+    }
+}

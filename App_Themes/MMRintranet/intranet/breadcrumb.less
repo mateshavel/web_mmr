@@ -1,0 +1,28 @@
+﻿.breadcrumb {
+    font-size:12px;
+    padding-top:16px;
+
+    a, span {
+        color:#8585A7;
+
+    }
+
+    .separator {
+        width:8px;
+        height:8px;
+        display:inline-block;
+        padding:0 16px;
+
+        &:before {
+            content:'';
+            background:transparent url('../icons/ico-back-arrow.svg') 0 0 no-repeat;      
+            -webkit-transform:scaleX(-1);
+            -ms-transform:scaleX(-1);
+            transform:scaleX(-1);
+            background-size:contain;
+            width:4px;
+            height:7px;
+            display:inline-block;
+        }
+    }
+}

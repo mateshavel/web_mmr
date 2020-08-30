@@ -1,0 +1,67 @@
+﻿.employees {
+    overflow-x:auto;
+    margin-top:40px;
+
+    .table {
+        min-width:958px;
+
+        thead {
+            tr {
+                th {
+                    border-bottom:1px solid #f3f3f3;
+                    font-size:13px;
+                    line-height:24px;
+                    font-weight:400;
+                    color:@gray-table
+                }
+            }
+        }
+
+        tbody {
+            tr {
+                th {
+                    padding:24px 8px 0 0;
+                    line-height:44px;
+                    border-top:0;
+                    width:52px;
+                    position:relative;
+
+                    img {
+                        -webkit-border-radius:44px;
+                        -moz-border-radius:44px;
+                        border-radius:44px
+                    }
+
+                    span {
+                        position:absolute;
+                        top:24px;
+                        right:8px;
+                        background-color:#D0021B;
+                        -webkit-border-radius:12px;
+                        -moz-border-radius:12px;
+                        border-radius:12px;
+                        width:12px;
+                        height:12px;
+                        display:inline-block;
+
+                        &.green {
+                            background-color:#29C566
+                        }
+                    }
+
+                }
+                td {
+                    padding:24px 8px 0;
+                    line-height:44px;
+                    border-top:0;
+                    text-align:left;
+                    white-space:nowrap;
+
+                    &.text-center {
+                        text-align:center
+                    }
+                }
+            }
+        }
+    }
+}
