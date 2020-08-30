@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>MMR intranet</title>
+  <link rel="stylesheet" type="text/css" href="App_Themes/MMRintranet/intranet.css">
+</head>
+<body>
+  <div class="header">
+    <div class="container">     
+      <div class="row">
+        <div class="header-top">  
+          <div class="col-md-3 col-md-push-1 col-sm-4 header-logo">
+            <div class="logo">
+              <a href="homepage.html"><img src="MMRintranet/media/Images/logo-mmr.png" alt="MMR intranet"></a>
+            </div>
+          </div>
+          <div class="col-md-push-1 col-sm-4 header-search">
+            <div class="searchBox js-search">	
+              <input type="text" maxlength="1000" class="search-input form-control" />
+              <input type="submit" value="" class="search-button btn btn-default" />                 
+          	</div>
+            <div class="menuMobile js-menu-mobile"><span>Menu</span></div>
+            <div class="searchMobile js-search-mobile"></div>
+            <div class="searchMobileClose js-search-mobile-close"><span>x</span></div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-md-push-2 col-sm-4">
+            <div class="wifi-login">
+              <a href="javascript:void(0)" data-toggle="modal" data-target="#wifi"><img src="App_Themes/MMRintranet/icons/ico-wifi.svg" alt="MMR wifi">Přístup do WIFI</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="container">
+        <div class="row">       
+          <div class="col-md-10 col-md-push-1 col-sm-12">
+            <div class="menuMobileClose js-menu-mobile-close"><span>x</span></div>
+            <ul class="items">
+              <li><a href="novinky.html">Novinky</a></li>
+              <li><a href="akce.html">Akce</a></li>
+              <li><a href="seznam-zamestnancu.html">Seznam zaměstanců</a></li>
+              <li><a href="nas-urad.html" class="js-menu-open">Náš úřad</a>
+                <ul>
+                  <li><a href="/">Položka v seznamu menu</a><li>
+                  <li><a href="/">Další položka v seznamu menu</a>
+                    <ul>
+                      <li><a href="/">Položka v seznamu menu</a></li>
+                      <li><a href="/">Další položka v seznamu menu</a></li>
+                      <li><a href="/">Třetí položka v seznamu menu</a></li>
+                    </ul> 
+                  </li>
+                  <li><a href="/">Třetí položka v seznamu menu</a></li>
+                </ul>              
+              </li>
+              <li><a href="/statni-sprava.html" class="js-menu-open">Státní správa</a>
+                <ul>
+                  <li><a href="/">Položka v seznamu menu</a>
+                    <ul>
+                      <li><a href="/">Položka v seznamu menu</a></li>
+                      <li><a href="/">Další položka v seznamu menu</a></li>
+                      <li><a href="/">Třetí položka v seznamu menu</a></li>
+                    </ul> 
+                  </li>
+                  <li><a href="/">Další položka v seznamu menu</a></li>
+                  <li><a href="/">Třetí položka v seznamu menu</a></li>
+                </ul>
+              </li>
+              <li><a href="dokumenty.html">Dokumenty</a></li>
+              <li><a href="aplikace.html">Aplikace</a></li>
+            </ul>
+            <span class="menu-stroke"></span>
+          </div>         
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="container">
+      <div class="col-md-10 col-md-push-1 col-sm-12">
+        <h1 class="hidden">MMR</h1>
+        <div class="menu-icon clearfix">
+          <div class="col-lg-2 col-sm-4 col-xs-6">
+            <a class="item" href="/">
+              <img class="svg" alt="Docházka" src="App_Themes/MMRintranet/icons/ico-attendance.svg" />
+              <span>Docházka</span>
+            </a>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-xs-6">
+            <a class="item" href="/">
+              <img class="svg" alt="Rezervační systém" src="App_Themes/MMRintranet/icons/ico-reservation.svg" />
+              <span>Rezervační systém</span>
+            </a>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-xs-6">
+            <a class="item" href="/">
+              <img class="svg" alt="E-Learning" src="App_Themes/MMRintranet/icons/ico-e-learning.svg" />
+              <span>E-Learning</span>
+            </a>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-xs-6">
+            <a class="item" href="/">
+              <img class="svg" alt="Service Desk" src="App_Themes/MMRintranet/icons/ico-service.svg" />
+              <span>Service Desk</span>
+            </a>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-xs-6">
+            <a class="item" href="/">
+              <img class="svg" alt="Monitoring médií" src="App_Themes/MMRintranet/icons/ico-monitoring.svg" />
+              <span>Monitoring médií</span>
+            </a>
+          </div>
+          <div class="col-lg-2 col-sm-4 col-xs-6">
+            <a class="item" href="/">
+              <img class="svg" alt="Spamy" src="App_Themes/MMRintranet/icons/ico-spam.svg" />
+              <span>Spamy</span>
+            </a>
+          </div>
+        </div>
+      </div>     
+      <div class="hp-article article col-lg-7 col-md-10 col-md-push-1 col-sm-12">
+        <h2>Novinky</h2>
+        <a href="novinky.html" class="btn btn-default btn-right btn-top hidden-xs">Všechny novinky</a>
+        <div class="items">
+          <div class="item item-big item-label">
+            <a href="detail-novinky.html" class="item-image">
+              <img alt="Obrázek" class="img-responsive" src="MMRintranet/media/Images/article.jpg" />
+            </a>
+            <a href="tag.html" class="label">Pro média</a>
+            <a href="detail-novinky.html" class="item-content">
+              <span class="title">V Evropské unii se rozhoduje o budoucnosti evropských fondů</span>
+              <span class="date">12.7.2017</span>
+              <span class="perex">Ve dnech 26. a 27. června se v Bruselu koná 7. Kohezní fórum, klíčové setkání rozhodujících aktérů k budoucnosti využívání evropských fondů po roce 2020. Českou republiku reprezentuje ministryně pro místní rozvoj ...</span>
+            </a>
+          </div>
+          <div class="item item-label">
+            <a href="tag.html" class="label">Interní</a>
+            <a href="detail-novinky.html" class="item-content">
+              <span class="title">MMR podpoří 115 miliony korun cestovní ruch v České republice</span>
+              <span class="date">12.7.2017</span>
+            </a>
+          </div>
+          <div class="item item-label">
+            <a href="tag.html" class="label">Interní</a>
+            <a href="detail-novinky.html" class="item-content"> 
+              <span class="title">Na modernizaci hřišť a tělocvičen mohou obce podávat žádosti</span>
+              <span class="date">12.7.2017</span>
+            </a>
+          </div>
+          <div class="item item-label">
+            <a href="tag.html" class="label">Pro média</a>
+            <a href="detail-novinky.html" class="item-content"> 
+              <span class="title">Šlechtová: Nová i modernizovaná hřiště a tělocvičny. </span>
+              <span class="date">12.7.2017</span>
+            </a>
+          </div>
+        </div>
+        <div class="visible-xs text-center"><a href="novinky.html" class="btn btn-default">Všechny novinky</a></div>
+      </div>
+      <div class="hp-comment col-lg-3 col-md-10 col-md-push-1 col-sm-12 clearfix">
+        <h2>Komentář ministryně</h2>
+        <div class="row">
+          <div class="col-lg-12 col-sm-6">
+            <div class="text">Vážení kolegové,<br /><br />Přeje Vám příjemnou dovolenou.<br />Užijte si dny volna!</div>
+          </div>
+          <div class="col-lg-12 col-sm-6">
+            <div class="person">
+              <div class="image">
+                <img alt="Karla Šlechtová" src="MMRintranet/media/Images/Slechtova.png" />
+              </div>
+              <div class="signature">
+                <img alt="Karla Šlechtová" src="MMRintranet/media/Images/Signature.svg" />
+                <span>Karla Šlechtová</span>
+              </div> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="article line-separator col-md-10 col-md-push-1 col-sm-12">
+        <h2>Akce ministerstva</h2>
+        <a href="akce.html" class="btn btn-default btn-right btn-green btn-top hidden-xs">Všechny akce</a>
+        <div class="items items-three">
+          <div class="item item-label">
+            <a href="tag.html" class="label">Konference</a>
+            <a href="detail-novinky.html" class="item-content">              
+              <span class="title">Školení krizového managementu ve Státní sféře</span>
+              <span class="date">12.7.2017, Brno</span>
+            </a>
+          </div>
+          <div class="item item-label">
+            <a href="tag.html" class="label">Konference</a>
+            <a href="detail-novinky.html" class="item-content">              
+              <span class="title">Školení krizového managementu ve Státní sféře</span>
+              <span class="date">12.7.2017, Brno</span>
+            </a>
+          </div>
+          <div class="item item-label">
+            <a href="tag.html" class="label">Konference</a>
+            <a href="detail-novinky.html" class="item-content">              
+              <span class="title">Školení krizového managementu ve Státní sféře</span>
+              <span class="date">12.7.2017, Brno</span>
+            </a>
+          </div>
+        </div>
+        <div class="visible-xs text-center"><a href="akce.html" class="btn btn-default">Všechny akce</a></div>
+      </div>
+      <div class="article line-separator col-md-10 col-md-push-1 col-sm-12">
+        <h2>Fotky za akcí MMR</h2>
+        <div class="items items-three">
+          <a href="detail-novinky.html" class="item">
+            <div class="item-image item-image-full">
+              <img alt="Obrázek" class="img-responsive" src="MMRintranet/media/Images/article1.jpg" />
+            </div>
+            <div class="item-content">
+              <span class="title">Školení krizového managementu ve Státní sféře</span>
+              <span class="date">12.7.2017, Brno</span>
+            </div>
+          </a>
+          <a href="detail-novinky.html" class="item">
+            <div class="item-image item-image-full">
+              <img alt="Obrázek" class="img-responsive" src="MMRintranet/media/Images/article2.jpg" />
+            </div>
+            <div class="item-content">
+              <span class="title">Školení krizového managementu ve Státní sféře</span>
+              <span class="date">12.7.2017, Brno</span>
+            </div>
+          </a>
+          <a href="detail-novinky.html" class="item">
+            <div class="item-image item-image-full">
+              <img alt="Obrázek" class="img-responsive" src="MMRintranet/media/Images/article1.jpg" />
+            </div>
+            <div class="item-content">
+              <span class="title">Školení krizového managementu ve Státní sféře</span>
+              <span class="date">12.7.2017, Brno</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 copyright text-center">
+          <span>© 2012 Ministerstvo pro místní rozvoj ČR,<br /> všechna práva vyhrazena</span>      
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="wifi" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <div class="wifi">
+            <div class="title">Přístup do návštěvnické<br />WiFi sítě MMR</div>
+            <table>
+              <tr>
+                <td>Název sítě:</td><td>MMRGuest</td>
+              </tr>
+              <tr>
+                <td>Heslo do sítě:</td><td>TiSifeJI</td>
+              </tr>
+              <tr>
+                <td>Platnost hesla:</td><td>22.6.2017<br /><span>Maximální doba přihlášení<br />je 2 hodiny denně.</span></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="CMSScripts/MMRintranet/jquery.dd.min.js"></script>
+  <script src="CMSScripts/MMRintranet/jquery.carouFredSel-6.1.0-min.js"></script>
+  <script src="CMSScripts/MMRintranet/jquery.fancybox-3.1.20.min.js"></script>
+  <script src="CMSScripts/MMRintranet/jquery.bootstrap.modal.js"></script>
+  <script src="CMSScripts/MMRintranet/main.js"></script>
+</body>
+</html>

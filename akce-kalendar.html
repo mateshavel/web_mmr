@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>MMR intranet</title>
+  <link rel="stylesheet" type="text/css" href="App_Themes/MMRintranet/intranet.css">
+</head>
+<body>
+  <div class="header">
+    <div class="container">     
+      <div class="row">
+        <div class="header-top">  
+          <div class="col-md-3 col-md-push-1 col-sm-4 header-logo">
+            <div class="logo">
+              <a href="homepage.html"><img src="MMRintranet/media/Images/logo-mmr.png" alt="MMR intranet"></a>
+            </div>
+          </div>
+          <div class="col-md-push-1 col-sm-4 header-search">
+            <div class="searchBox js-search">	
+              <input type="text" maxlength="1000" class="search-input form-control" />
+              <input type="submit" value="" class="search-button btn btn-default" />                 
+          	</div>
+            <div class="menuMobile js-menu-mobile"><span>Menu</span></div>
+            <div class="searchMobile js-search-mobile"></div>
+            <div class="searchMobileClose js-search-mobile-close"><span>x</span></div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-md-push-2 col-sm-4">
+            <div class="wifi-login">
+              <a href="/"><img src="App_Themes/MMRintranet/icons/ico-wifi.svg" alt="MMR wifi">Přístup do WIFI</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="container">
+        <div class="row">       
+          <div class="col-md-10 col-md-push-1 col-sm-12">
+            <div class="menuMobileClose js-menu-mobile-close"><span>x</span></div>
+            <ul class="items">
+              <li><a href="novinky.html">Novinky</a></li>
+              <li><a href="akce.html">Akce</a></li>
+              <li><a href="seznam-zamestnancu.html">Seznam zaměstanců</a></li>
+              <li><a href="nas-urad.html" class="js-menu-open">Náš úřad</a>
+                <ul>
+                  <li><a href="/">Položka v seznamu menu</a><li>
+                  <li><a href="/">Další položka v seznamu menu</a>
+                    <ul>
+                      <li><a href="/">Položka v seznamu menu</a></li>
+                      <li><a href="/">Další položka v seznamu menu</a></li>
+                      <li><a href="/">Třetí položka v seznamu menu</a></li>
+                    </ul> 
+                  </li>
+                  <li><a href="/">Třetí položka v seznamu menu</a></li>
+                </ul>              
+              </li>
+              <li><a href="/statni-sprava.html" class="js-menu-open">Státní správa</a>
+                <ul>
+                  <li><a href="/">Položka v seznamu menu</a>
+                    <ul>
+                      <li><a href="/">Položka v seznamu menu</a></li>
+                      <li><a href="/">Další položka v seznamu menu</a></li>
+                      <li><a href="/">Třetí položka v seznamu menu</a></li>
+                    </ul> 
+                  </li>
+                  <li><a href="/">Další položka v seznamu menu</a></li>
+                  <li><a href="/">Třetí položka v seznamu menu</a></li>
+                </ul>
+              </li>
+              <li><a href="dokumenty.html">Dokumenty</a></li>
+              <li><a href="aplikace.html">Aplikace</a></li>
+            </ul>
+            <span class="menu-stroke"></span>
+          </div>         
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content content-separator">
+    <div class="bg-gray">
+      <div class="container">
+        <div class="col-md-10 col-md-push-1 col-sm-12">
+          <h1>Akce</h1>
+          <div class="filter filter-tabs clearfix">
+            <div class="row">
+              <div class="col-sm-6 col-xs-6 filter-item">
+                <input type="text" class="form-control" placeholder="Hledat v akcích" />
+              </div>
+              <div class="col-sm-3 col-xs-6 filter-item">
+                <select class="form-control">
+                  <option value="0">Rok</option>
+                  <option value="1">2016</option>
+                  <option value="2">2017</option>              
+                </select>
+              </div>
+              <div class="col-sm-3 col-xs-12 filter-item">
+                <a href="#" class="btn btn-full btn-green">Filtrovat</a>
+              </div>
+            </div>
+            <div class="tabs">
+              <a class="active" href="#">Nadcházející akce</a>
+              <a href="#">Proběhlé akce</a>
+            </div>
+            <div class="tabs-mobile">
+              <select class="customDdl">
+                <option value="0">Nadcházející akce</option>
+                <option value="1">Proběhlé akce</option>             
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <div class="container">
+      <div class="col-md-10 col-md-push-1 col-sm-12">
+        <div class="filter-sort clearfix">
+            <div class="row">
+                <div class="col-xs-6 text-left">Řadit podle:
+                    <a href="#" class="active">Nejnovější</a>
+                    <a href="#">Oblíbené</a>
+                </div>
+                <div class="col-xs-6 text-right">Zobrazení:
+                    <a href="#">Seznam</a>
+                    <a href="#" class="active">Kalendář</a>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-10 col-md-push-1 col-sm-12">
+        <div class="row">   
+          <div class="col-lg-6 col-sm-7">        
+            <div class="Calendar">
+              <table cellspacing="0" cellpadding="2" rules="all" title="Calendar" style="border-width:1px;border-style:solid;border-collapse:collapse;">
+    	          <tbody>
+                  <tr>
+                    <td colspan="7" style="background-color:Silver;">
+                      <table cellspacing="0" style="width:100%;border-collapse:collapse;">
+    		                <tbody>
+                          <tr>
+                            <td style="width:15%;"><a href="" style="color:Black" title="Přejít na předchozí měsíc">&lt;</a></td>
+                            <td align="center" style="width:70%;">srpen 2017</td>
+                            <td align="right" style="width:15%;"><a href="" style="color:Black" title="Přejít na další měsíc">&gt;</a></td>
+                          </tr>
+                        </tbody>  
+    	                </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th align="center" abbr="pondělí" scope="col">po</th>
+                    <th align="center" abbr="úterý" scope="col">út</th>
+                    <th align="center" abbr="středa" scope="col">st</th>
+                    <th align="center" abbr="čtvrtek" scope="col">čt</th>
+                    <th align="center" abbr="pátek" scope="col">pá</th>
+                    <th align="center" abbr="sobota" scope="col">so</th>
+                    <th align="center" abbr="neděle" scope="col">ne</th>
+                  </tr>
+                  <tr>
+                    <td align="center" style="width:14%;"><span class="empty gray">30</span></td>
+                    <td align="center" style="width:14%;"><span class="empty gray">31</span></td>
+                    <td align="center" style="width:14%;"><span class="empty">1</span></td>
+                    <td align="center" style="width:14%;"><span class="empty">2</span></td>
+                    <td align="center" style="width:14%;"><span class="empty">3</span></td>
+                    <td align="center" style="width:14%;"><span class="empty">4</span></td>
+                    <td align="center" style="width:14%;"><span class="empty">5</span></td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="width:14%;"><a href="" class="items actual">6<span>3</span></a></td>
+                    <td align="center" style="width:14%;"><span class="empty">7</span></td>
+                    <td align="center" style="width:14%;"><span class="empty">8</span></td>
+                    <td align="center" style="width:14%;"><span class="empty">9</span></td>
+                    <td align="center" style="width:14%;"><span class="empty">10</span></td>
+                    <td align="center" style="width:14%;"><span class="empty">11</span></td>
+                    <td align="center" style="width:14%;"><span class="empty">12</span></td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="width:14%;"><span class="empty">13</span></td>
+                    <td align="center" style="width:14%;"><span class="empty">14</span></td>
+                    <td align="center" style="width:14%;"><span class="empty">15</span></td>
+                    <td align="center" style="width:14%;"><span class="empty">16</span></td>
+                    <td align="center" style="width:14%;"><span class="empty actual">17</span></td>
+                    <td align="center" style="width:14%;"><span class="empty">18</span></td>
+                    <td align="center" style="width:14%;"><span class="empty">19</span></td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="width:14%;"><span class="empty">20</span></td>
+                    <td align="center" style="width:14%;"><span class="empty">21</span></td>
+                    <td align="center" style="width:14%;"><a href="" class="items">22<span>4</span></a></td>
+                    <td align="center" style="width:14%;"><span class="empty">23</span></td>
+                    <td align="center" style="width:14%;"><span class="empty">24</span></td>
+                    <td align="center" style="width:14%;"><span class="empty">25</span></td>
+                    <td align="center" style="width:14%;"><a href="" class="items">26<span>8</span></a></td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="width:14%;"><span class="empty">27</span></td>
+                    <td align="center" style="width:14%;"><span class="empty">28</span></td>
+                    <td align="center" style="width:14%;"><span class="empty">29</span></td>
+                    <td align="center" style="width:14%;"><span class="empty">30</span></td>
+                    <td align="center" style="width:14%;"><span class="empty">31</span></td>
+                    <td align="center" style="width:14%;"><span class="empty gray">1</span></td>
+                    <td align="center" style="width:14%;"><span class="empty gray">2</span></td>
+                  </tr>
+                  <tr>
+                    <td align="center" style="width:14%;"><span class="empty gray">3</span></td>
+                    <td align="center" style="width:14%;"><span class="empty gray">4</span></td>
+                    <td align="center" style="width:14%;"><span class="empty gray">5</span></td>
+                    <td align="center" style="width:14%;"><span class="empty gray">6</span></td>
+                    <td align="center" style="width:14%;"><span class="empty gray">7</span></td>
+                    <td align="center" style="width:14%;"><span class="empty gray">8</span></td>
+                    <td align="center" style="width:14%;"><span class="empty gray">9</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div> 
+          </div>
+          <div class="Calendar article col-lg-6 col-sm-5">     
+            <div class="items">
+              <div class="item item-big item-label">
+                <a href="tag.html" class="label">Konference</a>
+                <a href="detail-novinky.html" class="item-content">
+                  <span class="title">V Evropské unii se rozhoduje o budoucnosti evropských fondů</span>
+                  <span class="date">12.7.2017, Brno</span>
+                </a>
+              </div>
+              <div class="item item-big item-label">
+                <a href="tag.html" class="label">Konference</a>
+                <a href="detail-novinky.html" class="item-content">
+                  <span class="title">V Evropské unii se rozhoduje o budoucnosti</span>
+                  <span class="date">12.7.2017, Brno</span>
+                </a>
+              </div>
+              <div class="item item-big item-label">
+                <a href="tag.html" class="label">Konference</a>
+                <a href="detail-novinky.html" class="item-content">
+                  <span class="title">V Evropské unii se rozhoduje o budoucnosti</span>
+                  <span class="date">12.7.2017, Brno</span>
+                </a>
+              </div>
+            </div>
+            <div class="pager text-center">
+              <a href="#" class="left">&nbsp;</a> 
+              <a href="#" class="hidden-mm">1</a> 
+              <span class="active">2</span>
+              <a href="#" class="hidden-mm">…</a>
+              <a href="#" class="hidden-mm">24</a>
+              <a href="#" class="right">&nbsp;</a>   
+            </div> 
+          </div>
+        </div>       
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 copyright text-center">
+          <span>© 2012 Ministerstvo pro místní rozvoj ČR,<br /> všechna práva vyhrazena</span>      
+        </div>
+      </div>
+    </div>
+  </div>  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="CMSScripts/MMRintranet/jquery.dd.min.js"></script>
+  <script src="CMSScripts/MMRintranet/jquery.carouFredSel-6.1.0-min.js"></script>
+  <script src="CMSScripts/MMRintranet/jquery.fancybox-3.1.20.min.js"></script>
+  <script src="CMSScripts/MMRintranet/main.js"></script>
+</body>
+</html>

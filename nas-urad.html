@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>MMR intranet</title>
+  <link rel="stylesheet" type="text/css" href="App_Themes/MMRintranet/intranet.css">
+</head>
+<body>
+  <div class="header">
+    <div class="container">     
+      <div class="row">
+        <div class="header-top">  
+          <div class="col-md-3 col-md-push-1 col-sm-4 header-logo">
+            <div class="logo">
+              <a href="homepage.html"><img src="MMRintranet/media/Images/logo-mmr.png" alt="MMR intranet"></a>
+            </div>
+          </div>
+          <div class="col-md-push-1 col-sm-4 header-search">
+            <div class="searchBox js-search">	
+              <input type="text" maxlength="1000" class="search-input form-control" />
+              <input type="submit" value="" class="search-button btn btn-default" />                 
+          	</div>
+            <div class="menuMobile js-menu-mobile"><span>Menu</span></div>
+            <div class="searchMobile js-search-mobile"></div>
+            <div class="searchMobileClose js-search-mobile-close"><span>x</span></div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-md-push-2 col-sm-4">
+            <div class="wifi-login">
+              <a href="/"><img src="App_Themes/MMRintranet/icons/ico-wifi.svg" alt="MMR wifi">Přístup do WIFI</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="container">
+        <div class="row">       
+          <div class="col-md-10 col-md-push-1 col-sm-12">
+            <div class="menuMobileClose js-menu-mobile-close"><span>x</span></div>
+            <ul class="items">
+              <li><a href="novinky.html">Novinky</a></li>
+              <li><a href="akce.html">Akce</a></li>
+              <li><a href="seznam-zamestnancu.html">Seznam zaměstanců</a></li>
+              <li><a href="nas-urad.html" class="js-menu-open">Náš úřad</a>
+                <ul>
+                  <li><a href="/">Položka v seznamu menu</a><li>
+                  <li><a href="/">Další položka v seznamu menu</a>
+                    <ul>
+                      <li><a href="/">Položka v seznamu menu</a></li>
+                      <li><a href="/">Další položka v seznamu menu</a></li>
+                      <li><a href="/">Třetí položka v seznamu menu</a></li>
+                    </ul> 
+                  </li>
+                  <li><a href="/">Třetí položka v seznamu menu</a></li>
+                </ul>              
+              </li>
+              <li><a href="/statni-sprava.html" class="js-menu-open">Státní správa</a>
+                <ul>
+                  <li><a href="/">Položka v seznamu menu</a>
+                    <ul>
+                      <li><a href="/">Položka v seznamu menu</a></li>
+                      <li><a href="/">Další položka v seznamu menu</a></li>
+                      <li><a href="/">Třetí položka v seznamu menu</a></li>
+                    </ul> 
+                  </li>
+                  <li><a href="/">Další položka v seznamu menu</a></li>
+                  <li><a href="/">Třetí položka v seznamu menu</a></li>
+                </ul>
+              </li>
+              <li><a href="dokumenty.html">Dokumenty</a></li>
+              <li><a href="aplikace.html">Aplikace</a></li>
+            </ul>
+            <span class="menu-stroke"></span>
+          </div>         
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content content-separator">
+    <div class="bg-gray">
+      <div class="container">
+        <div class="col-md-10 col-md-push-1 col-sm-12">
+          <h1>Náš úřad</h1>
+          <div class="subtext"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eu tortor velit. Fusce 
+          malesuada orci ut massa posuere, ac varius quam blandit. Vivamus vel dapibus leo. Maecenas 
+          massa lorem, pellentesque at tortor at, rhoncus ullamcorper libero. Sed lectus leo, aliquam in 
+          diam nec, tempus placerat ex.</p></div>
+          <div class="menu-icon menu-center menu-icon-three clearfix">
+            <div class="col-sm-4 col-xs-6">
+              <a class="item" href="/">
+                <span><span>Řídící akty</span></span>
+              </a>
+            </div>
+            <div class="col-sm-4 col-xs-6">
+              <a class="item" href="/">
+                <span><span>Interní informace</span>
+              </a>
+            </div>
+            <div class="col-sm-4 col-xs-6">
+              <a class="item" href="/">
+                <span><span>Oznamování protiprávního jednání</span></span>
+              </a>
+            </div>
+            <div class="col-sm-4 col-xs-6">
+              <a class="item" href="/">
+                <span><span>Zákon o státní službě</span></span>
+              </a>
+            </div>
+            <div class="col-sm-4 col-xs-6">
+              <a class="item" href="/">
+                <span><span>Monitoring médií</span></span>
+              </a>
+            </div>
+          </div>
+        </div>     
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 copyright text-center">
+          <span>© 2012 Ministerstvo pro místní rozvoj ČR,<br /> všechna práva vyhrazena</span>      
+        </div>
+      </div>
+    </div>
+  </div>  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="CMSScripts/MMRintranet/jquery.dd.min.js"></script>
+  <script src="CMSScripts/MMRintranet/jquery.carouFredSel-6.1.0-min.js"></script>
+  <script src="CMSScripts/MMRintranet/jquery.fancybox-3.1.20.min.js"></script>
+  <script src="CMSScripts/MMRintranet/main.js"></script>
+</body>
+</html>
